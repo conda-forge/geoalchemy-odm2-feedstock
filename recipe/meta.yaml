@@ -9,11 +9,12 @@ source:
   sha256: fbbfb448f601037c9bc15c5314047cd049a1c2dd5659d6078c6ef3ba1cc8508e
 
 build:
-  number: 0
+  noarch: python
+  number: 1
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
-  build:
+  host:
     - python
     - pip
     - sqlalchemy >=0.6.1
